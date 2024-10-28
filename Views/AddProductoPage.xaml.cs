@@ -1,6 +1,6 @@
-using NubeCRUD.Model;
-using NubeCRUD.Conexion;
-namespace NubeCRUD.Views;
+using TiendaSmart.Model;
+using TiendaSmart.Conexion;
+namespace TiendaSmart.Views;
 
 public partial class AddProductoPage : ContentPage
 {

@@ -1,4 +1,4 @@
-﻿namespace NubeCRUD.Views;
+﻿namespace TiendaSmart.Views;
 
 public partial class MainPage : ContentPage
 {

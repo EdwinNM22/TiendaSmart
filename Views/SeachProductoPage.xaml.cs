@@ -1,9 +1,9 @@
-using NubeCRUD.Conexion;
-using NubeCRUD.Views;
-using NubeCRUD.Model;
+using TiendaSmart.Conexion;
+using TiendaSmart.Views;
+using TiendaSmart.Model;
 
 
-namespace NubeCRUD.Views;
+namespace TiendaSmart.Views;
 
 public partial class SearchProductPage : ContentPage
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NubeCRUD.Model
+namespace TiendaSmart.Model
 {
     public class Producto
     {

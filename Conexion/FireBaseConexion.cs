@@ -1,13 +1,13 @@
 ﻿using Firebase.Database;
 using Firebase.Database.Query;
-using NubeCRUD.Model;
+using TiendaSmart.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NubeCRUD.Conexion
+namespace TiendaSmart.Conexion
 {
     public class FirebaseConexion
     {

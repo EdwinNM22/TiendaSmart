@@ -1,6 +1,6 @@
-namespace NubeCRUD.Views;
-using NubeCRUD.Model;
-using NubeCRUD.Conexion;
+namespace TiendaSmart.Views;
+using TiendaSmart.Model;
+using TiendaSmart.Conexion;
 
 public partial class EditProductoPage : ContentPage
 {

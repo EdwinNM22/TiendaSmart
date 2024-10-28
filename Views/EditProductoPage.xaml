@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TiendaSmart.Views.EditProductoPage"
-             Title="EditProductoPage">
+             Title="Editar">
 
     <StackLayout Padding="20">
         <Label Text="Agregar Producto" FontSize="24" HorizontalOptions="Center"/>

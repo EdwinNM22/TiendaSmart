@@ -4,7 +4,7 @@
              x:Class="TiendaSmart.Views.MainPage"
              BackgroundColor="#00796B"
              Shell.NavBarIsVisible="True"
-             Title="">
+             Title="Home">
 
     <VerticalStackLayout VerticalOptions="Center" Spacing="20">
 

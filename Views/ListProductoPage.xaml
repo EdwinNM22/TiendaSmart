@@ -1,12 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TiendaSmart.Views.ListProductoPage"
-             Title="ListProductoPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="NubeCRUD.Views.ListProductoPage"
+             Title="ListProductoPage"
+             BackgroundColor="#00796B">
+
+    <ContentPage.Resources>
+
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="Margin" Value="0, 0, 10, 0"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <StackLayout Padding="20">
+
+        <Label Text="Busca un producto"
+            FontSize="32"
+            FontAttributes="Bold"
+            TextColor="White"
+            HorizontalOptions="Center"/>
+
+        <Frame BackgroundColor="#004D40"
+               BorderColor="Transparent"
+               CornerRadius="10"
+               HasShadow="True"
+               WidthRequest="400"
+               Padding="20">
+
+            <Grid ColumnDefinitions="*,*,Auto" VerticalOptions="FillAndExpand" >
+                <Label Text="Nombre" Grid.Column="0" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label Text="Descripcion" Grid.Column="1" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label Text="Precio" Grid.Column="2" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center"/>
+            </Grid>
+        </Frame>
+
+        <Frame Padding="10"
+               Margin="10" 
+               CornerRadius="10" 
+               HeightRequest="700"
+               WidthRequest="400"
+               BackgroundColor="#004D40"
+               BorderColor="Transparent"
+               HasShadow="True">
+
+
+            <ListView x:Name="ProductsListViews" HasUnevenRows="True" SeparatorVisibility="Default" ItemTapped="OnItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid ColumnDefinitions="*,*,Auto" Padding="10" HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Nombre}" Grid.Column="0" Style="{StaticResource LabelStyle}" />
+                                <Label Text="{Binding Descripcion}" Grid.Column="1" Style="{StaticResource LabelStyle}" />
+                                <Label Text="{Binding Precio}" Grid.Column="2" Style="{StaticResource LabelStyle}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Frame>
+
+    </StackLayout>
 </ContentPage>

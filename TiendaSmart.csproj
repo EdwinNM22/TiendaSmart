@@ -58,8 +58,11 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\AddIcon.png" />
+	  <None Remove="Resources\Images\add_icon.png" />
 	  <None Remove="Resources\Images\ListIcon.png" />
+	  <None Remove="Resources\Images\list_icon.png" />
 	  <None Remove="Resources\Images\SearchIcon.png" />
+	  <None Remove="Resources\Images\search_icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>

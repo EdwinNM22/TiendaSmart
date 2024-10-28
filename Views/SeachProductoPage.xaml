@@ -54,7 +54,11 @@
                 HeightRequest="50"
                 WidthRequest="300"
                 HorizontalOptions="Center"
-                Margin="0,20,0,0"/>
+                Margin="0,20,0,0">
+            <Button.ImageSource>
+                <FileImageSource File="search_icon.png" />
+            </Button.ImageSource>
+        </Button>
 
 
         <!-- Cabecera contenedor nombre, precio, descripcion -->

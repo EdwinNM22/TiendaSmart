@@ -11,7 +11,12 @@
         <Entry x:Name="DescripcionEntry" Placeholder="Descripcion del Producto "/>
         <Entry x:Name="PrecioEntry" Placeholder="Precio del Producto" />
 
-        <Button Text="Actualizar" Clicked="OnUpdateProductClicked" />
+        <Button Text="Actualizar" Clicked="OnUpdateProductClicked">
+
+            <Button.ImageSource>
+                <FileImageSource File="search_icon.png" />
+            </Button.ImageSource>
+        </Button>
 
     </StackLayout>
 </ContentPage>

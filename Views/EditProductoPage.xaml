@@ -2,21 +2,72 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TiendaSmart.Views.EditProductoPage"
-             Title="Editar">
+             Title="Editar" BackgroundColor="#00796B">
 
-    <StackLayout Padding="20">
-        <Label Text="Agregar Producto" FontSize="24" HorizontalOptions="Center"/>
+    <VerticalStackLayout Padding="20" Spacing="20">
+        
+        <Label Text="Menú Principal"
+               FontSize="32"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"/>
 
-        <Entry x:Name="NombreEntry" Placeholder="Nombre del Producto "/>
-        <Entry x:Name="DescripcionEntry" Placeholder="Descripcion del Producto "/>
-        <Entry x:Name="PrecioEntry" Placeholder="Precio del Producto" />
+       
 
-        <Button Text="Actualizar" Clicked="OnUpdateProductClicked">
+            <!-- Campos de entrada -->
+            <Frame BackgroundColor="White" CornerRadius="12" Padding="0" HasShadow="True" BorderColor="Transparent">
+
+            <Entry x:Name="NombreEntry"
+                        Placeholder="Nombre del Producto"
+                        PlaceholderColor="#888"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HeightRequest="50"
+                        TextColor="Black"
+                        Margin="0,10,0,0"/>
+            </Frame>
+        
+            <Frame BackgroundColor="White" CornerRadius="12" Padding="0" HasShadow="True" BorderColor="Transparent">
+
+            <Entry x:Name="DescripcionEntry"
+                        Placeholder="Descripcion"
+                        PlaceholderColor="#888"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HeightRequest="50"
+                        TextColor="Black"
+                        Margin="0,10,0,0"/>
+            </Frame>
+
+            <Frame BackgroundColor="White" CornerRadius="12" Padding="0" HasShadow="True" BorderColor="Transparent">
+
+            <Entry x:Name="PrecioEntry"
+                        Placeholder="Precio"
+                        PlaceholderColor="#888"
+                        FontSize="18"
+                        BackgroundColor="White"
+                        HeightRequest="50"
+                        TextColor="Black"
+                        Margin="0,10,0,0"/>
+            </Frame>
+
+            <Button Text="Actualizar"
+                        Clicked="OnUpdateProductClicked"
+                        BackgroundColor="#1976D2"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="10"
+                        HeightRequest="50"
+                        WidthRequest="300"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0">
 
             <Button.ImageSource>
-                <FileImageSource File="search_icon.png" />
+                <FileImageSource File="add_icon.png" />
             </Button.ImageSource>
-        </Button>
 
-    </StackLayout>
+            </Button>
+        
+    </VerticalStackLayout>
+        
 </ContentPage>

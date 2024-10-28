@@ -1,9 +1,27 @@
-namespace TiendaSmart.Views;
+using NubeCRUD.Conexion;
+using NubeCRUD.Views;
+using NubeCRUD.Model;
 
-public partial class SeachProductoPage : ContentPage
+
+namespace NubeCRUD.Views;
+
+public partial class SearchProductPage : ContentPage
 {
-	public SeachProductoPage()
-	{
-		InitializeComponent();
-	}
+    FirebaseConexion firebaseConexion = new FirebaseConexion();
+    public SearchProductPage()
+    {
+        InitializeComponent();
+    }
+
+
+    private async void OnSearchProductClicked(object sender, EventArgs e)
+    {
+        string searchTerm = SearchEntry.Text;
+        var productos = await firebaseConexion.GetAllProductos();
+        var filteredProductos = productos.Where(p => p.Nombre.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+
+        ResultsListViews.ItemsSource = filteredProductos;
+
+
+    }
 }

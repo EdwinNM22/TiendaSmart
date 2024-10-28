@@ -8,7 +8,7 @@
     Title="TiendaSmart"
     Shell.BackgroundColor="#009688"
     TitleColor="White"
-    Shell.ForegroundColor="White">>
+    Shell.ForegroundColor="White">
 
     <ShellContent
         Title="Home"

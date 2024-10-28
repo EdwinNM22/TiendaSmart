@@ -9,7 +9,7 @@
     
     
     <VerticalStackLayout VerticalOptions="Center">
-        <Frame BackgroundColor="#004D40" BorderColor="Transparent" HeightRequest="530" WidthRequest="370" CornerRadius="12"
+        <Frame BackgroundColor="#004D40" BorderColor="Transparent" HeightRequest="450" WidthRequest="370" CornerRadius="12"
                HasShadow="True" Padding="10">
             <Grid HorizontalOptions="CenterAndExpand" RowSpacing="30">
                 <Grid.RowDefinitions>
@@ -42,14 +42,12 @@
                 </Frame>
 
                 <Frame Grid.Row="3" Padding="2">
-                    <Entry x:Name="ContraEntry"  Placeholder="Contraseña"/>
+                    <Entry x:Name="ContraEntry"  Placeholder="Contraseña" IsPassword="True" />
                 </Frame>
 
                 <Button x:Name="IniciarButton"
-                        Grid.Row="4" Text="Iniciar sesion" FontAttributes="Bold" Clicked="IniciarButton_Clicked"/>
-
-                <Button x:Name="RegistrarseButton"
-                        Grid.Row="5" Text="Registrarse" FontAttributes="Bold"/>
+                        Grid.Row="4" Text="Iniciar sesion" FontAttributes="Bold" Clicked="IniciarButton_Clicked"
+                        BackgroundColor="#1976D2"/>
 
 
             </Grid>

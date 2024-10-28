@@ -39,7 +39,7 @@
                             HeightRequest="80"
                             HorizontalOptions="FillAndExpand">
                         <Button.ImageSource>
-                            <FileImageSource File="icon_agregar.png" />
+                            <FileImageSource File="AddIcon.png" />
                         </Button.ImageSource>
                     </Button>
                 </Grid>
@@ -55,7 +55,7 @@
                             HeightRequest="80"
                             HorizontalOptions="FillAndExpand">
                         <Button.ImageSource>
-                            <FileImageSource File="icon_buscar.png" />
+                            <FileImageSource File="SearchIcon.png" />
                         </Button.ImageSource>
                     </Button>
                 </Grid>
@@ -71,7 +71,7 @@
                             HeightRequest="80"
                             HorizontalOptions="FillAndExpand">
                         <Button.ImageSource>
-                            <FileImageSource File="icon_listar.png" />
+                            <FileImageSource File="ListIcon.png" />
                         </Button.ImageSource>
                     </Button>
                 </Grid>

@@ -5,7 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:TiendaSmart.Views"
     Shell.FlyoutBehavior="Disabled"
-    Title="TiendaSmart">
+    Title="TiendaSmart"
+    Shell.BackgroundColor="#009688"
+    TitleColor="White"
+    Shell.ForegroundColor="White">>
 
     <ShellContent
         Title="Home"
